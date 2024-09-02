@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Jonah Coffelt</title>
+        <meta name="viewport">
+        <link rel="apple-touch-icon" sizes="180x180" href="images\favicon\apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images\favicon\favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images\favicon\favicon-16x16.png">
+        <link rel="manifest" href="images\favicon\site.webmanifest">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="bar.css">
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="modal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="bar">
+            <div class="bar-grid">
+                <a class="bar-segment" href="index.html">
+                    <div class="bar-segment-text">
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="about.html">
+                    <div class="bar-segment-text">
+                        <p>About Me</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="projects.html">
+                    <div class="bar-segment-text selected">
+                        <p>Projects</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="achievements.html">
+                    <div class="bar-segment-text">
+                        <p>Achievements</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="resume.html">
+                    <div class="bar-segment-text">
+                        <p>Resume</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="projects-title">
+                Projects
+            </div>
+            <div class="project-cards-container">
+
+                <button data-modal-target="#project-1" class="project-button">
+                    <div class="project-card">
+                        <img src="images\engine1.png" alt="" class="project-img">
+                        <h1 class="project-name">Python Game Engine</h1>
+                        <p class="project-skills">• Python • GLSL • ModernGL •</p>
+                    </div>
+                </button>
+
+                <button data-modal-target="#project-2" class="project-button">
+                    <div class="project-card">
+                        <img src="images\network1.png" alt="" class="project-img">
+                        <h1 class="project-name">Neural Network</h1>
+                        <p class="project-skills">• Python • Numpy • Calculus •</p>
+                    </div>
+                </button>
+
+                <button data-modal-target="#project-3" class="project-button">
+                    <div class="project-card">
+                        <img src="images\level1.png" alt="" class="project-img">
+                        <h1 class="project-name">Level Editor</h1>
+                        <p class="project-skills">• Python • Pygame • UI/UX •</p>
+                    </div>
+                </button>
+
+                <button data-modal-target="#project-4" class="project-button">
+                    <div class="project-card">
+                        <img src="images\dice1.png" alt="" class="project-img">
+                        <h1 class="project-name">Dicey Decks</h1>
+                        <p class="project-skills">• Python • ModernGL •</p>
+                    </div>
+                </button>
+
+                <button data-modal-target="#project-5" class="project-button">
+                    <div class="project-card">
+                        <img src="images\mere1.png" alt="" class="project-img">
+                        <h1 class="project-name">As a Mere Means</h1>
+                        <p class="project-skills">• Python • Pygame • Aseprite •</p>
+                    </div>
+                </button>
+
+                <button data-modal-target="#project-6" class="project-button">
+                    <div class="project-card">
+                        <img src="images\web1.png" alt="" class="project-img">
+                        <h1 class="project-name">Portfolio Website</h1>
+                        <p class="project-skills">• HTML • CSS • JS •</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="project-modal-container">
+            <div class="modal" id="project-1">
+                <div class="modal-header">
+                    <div class="modal-title">Python Game Engine</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        An engine I made with a partner using Python and ModernGL.
+                        Includes vbo, vao, texture, and buffer handling. 
+                        Features model loading, dynamic lighting, dynamic shadows, advanced physics, and marching cubes. 
+                        Contains built-in systems for hundreds of thousands of particles, GUI, and sound.
+                        Implemented stylized rendering with cel shading and object outlines.
+                    </div>
+                    <div class="modal-images-container">
+                        <img src="images\engine1.png" alt="" class="modal-image">
+                        <img src="images\engine2.png" alt="" class="modal-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="project-2">
+                <div class="modal-header">
+                    <div class="modal-title">Neural Network</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        A lightweight neural network I created in Python using Numpy.
+                        Utilized knowledge of calculus to implement gradient backpropagation.
+                        Trained with the MNIST data set to recognize handwritten numbers with 95% accuracy.
+                    </div>
+                    <div class="modal-images-container">
+                        <img src="images\network1.png" alt="" class="modal-image">
+                        <img src="images\network2.png" alt="" class="modal-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="project-3">
+                <div class="modal-header">
+                    <div class="modal-title">Level Editor</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        An easy-to-use level editor made with Pygame for quickly building 2D game worlds.
+                        Includes tools for tile sheet loading, custom rule tiles, collisions, saving/loading and exporting levels, and various editing tools.
+                        Optimized for making Pygame games to be better than other level editors on the market.
+                        Advanced tile rendering allows for millions of real-time tiles on the screen at once and infinite level sizes.
+                    </div>
+                    <div class="modal-images-container">
+                        <img src="images\level1.png" alt="" class="modal-image">
+                        <img src="images\level2.png" alt="" class="modal-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="project-4">
+                <div class="modal-header">
+                    <div class="modal-title">Dicey Decks</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        The first game made in my 3D Python Engine.
+                        A deck-building action game where you play as a dice casting spells in dynamic dungeons.
+                        Features procedurally generated dungeons and cards.
+                        Won "Best in Programming" at Texas A&M Game Developers Game Jam spring 2024.
+                    </div>
+                    <div class="modal-images-container">
+                        <img src="images\dice1.png" alt="" class="modal-image">
+                        <img src="images\dice2.png" alt="" class="modal-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="project-5">
+                <div class="modal-header">
+                    <div class="modal-title">As a Mere Means</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        My first released game made with Pygame in two weeks for the Pirate Software Game Jam.
+                        A fun 2D action platformer with punchy combat and interesting mechanics.
+                        Features my first full asset pack made with Aseprite.
+                        Placed in the top 10% of entries in Theme and Artistic Style.
+                    </div>
+                    <div class="modal-images-container">
+                        <img src="images\mere1.png" alt="" class="modal-image">
+                        <img src="images\mere2.png" alt="" class="modal-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="project-6">
+                <div class="modal-header">
+                    <div class="modal-title">Portfolio Website</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        The website you are on right now. 
+                        A sleek and minimal design with a focus on compact presentation.
+                        Design inspired by my favorite code editor and theme.
+                        Built entirely from scratch in HTML and CSS.
+                        Responsive to various screen sizes.
+                    </div>
+                    <div class="modal-images-container">
+                        <img src="images\web1.png" alt="" class="modal-image">
+                        <img src="images\web2.png" alt="" class="modal-image">
+                    </div>
+                </div>
+            </div>
+
+            <div id="overlay"></div>
+        </div>
+        <div class="profiles-bar">
+            <div class="link-box" onclick="window.open('mailto:coffelt.jonah0918@gmail.com', '_blank');">
+                <img src="images\gmail-white.png" class="link-img">
+            </div>
+            <div class="link-box" onclick="window.open('https://github.com/JonahCoffelt', '_blank');">
+                <img src="images\github-white.png" class="link-img">
+            </div>
+            <div class="link-box" onclick="window.open('https://www.linkedin.com/in/jonah-coffelt-110131296/', '_blank');">
+                <img src="images\linkedin-white.png" class="link-img">
+            </div>
+        </div>
+        <script src="modal.js"></script>
+    </body>
+</html>

@@ -1,0 +1,152 @@
+.about {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me-section {
+    height: 35%;
+    width: 65%;
+}
+
+.experiences-and-classes {
+    height: 65%;
+    width: 75%;
+}
+
+.about-me-title {
+    text-align: center;
+    font-size: 10vh;
+    font-weight: 600;
+}
+
+.about-me-description {
+    font-size: min(3vh, 1.6vw);
+    font-weight: 300;
+}
+
+.experiences-and-classes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.experiences {
+    width: 50%;
+}
+
+.classes {
+    width: 50%;
+}
+
+.experiences-title {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.classes-title {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.experiences-list {
+    margin-top: 20px;
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classes-list {
+    margin-top: 20px;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-button {
+    width: 75%;
+    height: 10vh;
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.experience-card {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 13%);
+    box-shadow: 0px 0px 12px hsl(0, 0%, 6%);
+    border-radius: 10px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.experience-card:hover {
+    color: rgb(215,153,33);
+    box-shadow: 0px 0px 18px hsl(0, 0%, 5%);
+}
+
+.experience-img {
+    height: 8vh;
+    width:  8vh;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.experience-name {
+    font-weight: 300;
+}
+
+@media (max-aspect-ratio: 10/9) {
+    .about {
+        height: 100%;
+    }
+
+    .about-me-section {
+        height: 35%;
+        width: 85%;
+    }
+
+    .experiences-and-classes {
+        flex-direction: column;
+    }
+
+    .about-me-description {
+        font-size: 3vh;
+        font-weight: 300;
+    }
+
+    .experiences {
+        width: 100%;
+        margin-top: 5vh;
+    }
+    .classes {
+        width: 100%;
+        margin-bottom: 20vh;
+    }
+
+    .experiences-title {
+        font-size: 6vh;
+    }
+    
+    .classes-title {
+        font-size: 6vh;
+    }
+}

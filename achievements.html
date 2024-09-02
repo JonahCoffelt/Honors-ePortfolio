@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Jonah Coffelt</title>
+        <meta name="viewport">
+        <link rel="apple-touch-icon" sizes="180x180" href="images\favicon\apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images\favicon\favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images\favicon\favicon-16x16.png">
+        <link rel="manifest" href="images\favicon\site.webmanifest">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="bar.css">
+        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="achievements.css">
+        <link rel="stylesheet" href="modal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="bar">
+            <div class="bar-grid">
+                <a class="bar-segment" href="index.html">
+                    <div class="bar-segment-text">
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="about.html">
+                    <div class="bar-segment-text">
+                        <p>About Me</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="projects.html">
+                    <div class="bar-segment-text">
+                        <p>Projects</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="achievements.html">
+                    <div class="bar-segment-text selected">
+                        <p>Achievements</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="resume.html">
+                    <div class="bar-segment-text">
+                        <p>Resume</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="achivements">
+            <div class="projects-title">
+                Achievements
+            </div>
+            <div class="achivements-cards-container">
+
+                <button data-modal-target="#project-1" class="project-button">
+                    <div class="project-card">
+                        <img src="images\grad2.png" alt="" class="project-img">
+                        <h1 class="project-name">Academics</h1>
+                    </div>
+                </button>
+
+                <button data-modal-target="#project-2" class="project-button">
+                    <div class="project-card">
+                        <img src="images\prog.png" alt="" class="project-img">
+                        <h1 class="project-name">Computer Science</h1>
+                    </div>
+                </button>
+
+                <button data-modal-target="#project-3" class="project-button">
+                    <div class="project-card">
+                        <img src="images\band.png" alt="" class="project-img">
+                        <h1 class="project-name">Band</h1>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="project-modal-container">
+            <div class="modal" id="project-1">
+                <div class="modal-header">
+                    <div class="modal-title">Academics</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="achivement-modal">
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            GPA
+                        </div>
+                        <div class="achievement-date">
+                            2019-Present
+                        </div>
+                        <div class="achievement-description">
+                            Maintained a 4.0 GPA throughout high school and current college semester. Graduated 5th in my high school class
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            International Baccalaureate
+                        </div>
+                        <div class="achievement-date">
+                            2022-2023
+                        </div>
+                        <div class="achievement-description">
+                            Earned an IB score of 39, the highest in the history of my high school
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            EH EDGE
+                        </div>
+                        <div class="achievement-date">
+                            2023-Present
+                        </div>
+                        <div class="achievement-description">
+                            Participated in the inaugural Engineering Honors EDGE cohort, a program focused on developing leaders in global engineering
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Dean's Honor Roll
+                        </div>
+                        <div class="achievement-date">
+                            2023
+                        </div>
+                        <div class="achievement-description">
+                            Placed on the Dean's Honor Roll for the Fall semester of 2023
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            President's Endowed Scholarship
+                        </div>
+                        <div class="achievement-date">
+                            2023
+                        </div>
+                        <div class="achievement-description">
+                            Received the President's Endowed scholarship, the most competitive academic scholarship offered at A&M
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Phi Eta Sigma
+                        </div>
+                        <div class="achievement-date">
+                            2024
+                        </div>
+                        <div class="achievement-description">
+                            Inducted into the Phi Eta Sigma honor society based on academic achievement
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="project-2">
+                <div class="modal-header">
+                    <div class="modal-title">Computer Science</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="achivement-modal">
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Texas Aggie Game Developers
+                        </div>
+                        <div class="achievement-date">
+                            2024
+                        </div>
+                        <div class="achievement-description">
+                            Won "Best in Programming" at the TAGD 2024 Spring Game Jam
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Robomasters
+                        </div>
+                        <div class="achievement-date">
+                            2023-2024
+                        </div>
+                        <div class="achievement-description">
+                            Accepted as a member in the A&M RoboMasters competitive organization on the computer vision team
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Pirate Software Game Jam
+                        </div>
+                        <div class="achievement-date">
+                            2024
+                        </div>
+                        <div class="achievement-description">
+                            Place in top 10% of entries in the Theme and Artistic Style category of the Pirate Software Game Jam
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="project-3">
+                <div class="modal-header">
+                    <div class="modal-title">Band</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="achivement-modal">
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            District & Area
+                        </div>
+                        <div class="achievement-date">
+                            2020-2023
+                        </div>
+                        <div class="achievement-description">
+                            District band member from 2020-2023 and area band member in 2023
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            National Festival
+                        </div>
+                        <div class="achievement-date">
+                            2023
+                        </div>
+                        <div class="achievement-description">
+                            Member of a chamber ensemble selected to perform at the Music for All National Festival 2023
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            State Ensemble
+                        </div>
+                        <div class="achievement-date">
+                            2020-2023
+                        </div>
+                        <div class="achievement-description">
+                            Advanced to state level in the UIL Solo & Ensemble competition 2020-2023
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-title">
+                            Section Leader
+                        </div>
+                        <div class="achievement-date">
+                            2020-2023
+                        </div>
+                        <div class="achievement-description">
+                            Clarinet section leader in the Magnolia High School Marching Band for three years
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="overlay"></div>
+        </div>
+        <div class="profiles-bar">
+            <div class="link-box" onclick="window.open('mailto:coffelt.jonah0918@gmail.com', '_blank');">
+                <img src="images\gmail-white.png" class="link-img">
+            </div>
+            <div class="link-box" onclick="window.open('https://github.com/JonahCoffelt', '_blank');">
+                <img src="images\github-white.png" class="link-img">
+            </div>
+            <div class="link-box" onclick="window.open('https://www.linkedin.com/in/jonah-coffelt-110131296/', '_blank');">
+                <img src="images\linkedin-white.png" class="link-img">
+            </div>
+        </div>
+        <script src="modal.js"></script>
+    </body>
+</html>

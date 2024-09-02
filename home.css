@@ -1,0 +1,108 @@
+.home{
+    position: relative;
+    height: 100vh;
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-text{
+    width: 100%;
+}
+
+.home-info{
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.title{
+    font-size: 12vh;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.subtitle{
+    color: hsl(0, 0%, 50%);
+    font-size: 2.5vh;
+    padding: 0px;
+    margin-top: -2vh;
+    font-weight: 400;
+    cursor: default;
+}
+
+.bio{
+    color: hsl(0, 0%, 90%);
+    padding: 0px;
+    margin-top: 4vh;
+    font-weight: 300;
+    font-size: 3.5vh;
+}
+
+.code-box {
+    margin-left: 10px;
+    margin-right: 5vw;
+    position: relative;
+    padding-left: 2vw;
+    background-color: hsl(0, 0%, 14%);
+    border-radius: 10px;
+    font-size: min(1.25vw, 2.25vh);
+    font-family: Space Mono;
+    cursor: default;
+    -webkit-box-shadow:0px 0px 50px 3px rgba(142,192,124,0.1);
+    -moz-box-shadow: 0px 0px 50px 3px rgba(142,192,124,0.1);
+    box-shadow: 0px 0px 50px 3px rgba(142,192,124,0.1), inset 0px 0px 12px hsl(0, 0%, 4%);
+    transition: all .5s;
+}
+
+@media (min-aspect-ratio: 10/9) {
+    .code-box {
+        height: 65%;
+    }
+
+    .home-text{
+        padding-left: 6vw;
+        padding-right: 6vw;
+        width: 80%;
+    }
+}
+
+@media (max-aspect-ratio: 10/9) {
+    .home {
+        padding: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .title{
+        padding-top: 5vh;
+        text-align: center;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    
+    .subtitle{
+        text-align: center;
+    }
+    
+    .bio{
+        text-align: center;
+        margin-bottom: -10vh;
+    }
+
+    .code-box {
+        margin-left: 5vw;
+        font-size: 2.25vh;
+        /*font-size: min(2.5vw, 2.25vh);*/
+    }
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Jonah Coffelt</title>
+        <meta name="viewport">
+        <link rel="apple-touch-icon" sizes="180x180" href="images\favicon\apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images\favicon\favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images\favicon\favicon-16x16.png">
+        <link rel="manifest" href="images\favicon\site.webmanifest">
+        <link rel="stylesheet" href="general.css">
+        <link rel="stylesheet" href="bar.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="about-modal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="bar">
+            <div class="bar-grid">
+                <a class="bar-segment" href="index.html">
+                    <div class="bar-segment-text">
+                        <p>Home</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="about.html">
+                    <div class="bar-segment-text selected">
+                        <p>About Me</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="projects.html">
+                    <div class="bar-segment-text">
+                        <p>Projects</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="achievements.html">
+                    <div class="bar-segment-text">
+                        <p>Achievements</p>
+                    </div>
+                </a>
+                <a class="bar-segment" href="resume.html">
+                    <div class="bar-segment-text">
+                        <p>Resume</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-me-section">
+                <div class="about-me-title">
+                    About Me
+                </div>
+                <div class="about-me-description">
+                    I am a Texas A&M computer science major with minors in philosophy and mathematics. In computer science, I focus on artificial intelligence, graphics programming, and game development. My philosophical areas of interest include Greek philosophy, ethics, and existentialism. During my time at A&M, I hope to get involved in CS research as well as publish a philosophical work in an undergraduate journal. 
+                </div>
+            </div>
+            <div class="experiences-and-classes">
+                <div class="experiences">
+                    <div class="experiences-title">
+                        Experiences
+                    </div>
+                    <div class="experiences-list">
+                        <button data-modal-target="#experience-1" class="experience-button">
+                            <div class="experience-card">
+                                <img src="images\TAGD.png" alt="" class="experience-img">
+                                <h1 class="experience-name">Texas Aggie Game Developers</h1>
+                            </div>
+                        </button>
+                        <button data-modal-target="#experience-2" class="experience-button">
+                            <div class="experience-card">
+                                <img src="images\EDGE.png" alt="" class="experience-img">
+                                <h1 class="experience-name">EH EDGE</h1>
+                            </div>
+                        </button>
+                        <button data-modal-target="#experience-3" class="experience-button">
+                            <div class="experience-card">
+                                <img src="images\Build.png" alt="" class="experience-img">
+                                <h1 class="experience-name">Build 4 Good</h1>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="classes">
+                    <div class="classes-title">
+                        Impactful Courses
+                    </div>
+                    <div class="classes-list">
+                        <button data-modal-target="#class-1" class="experience-button">
+                            <div class="experience-card">
+                                <img src="images\ai.png" alt="" class="experience-img">
+                                <h1 class="experience-name">Ethics of AI</h1>
+                            </div>
+                        </button>
+                        <button data-modal-target="#class-2" class="experience-button">
+                            <div class="experience-card">
+                                <img src="images\classical.png" alt="" class="experience-img">
+                                <h1 class="experience-name">Classical Philosophy</h1>
+                            </div>
+                        </button>
+                        <button data-modal-target="#class-3" class="experience-button">
+                            <div class="experience-card">
+                                <img src="images\17th.png" alt="" class="experience-img">
+                                <h1 class="experience-name">17th Century Philosophy</h1>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-modal-container">
+            <div class="modal-experience" id="experience-1">
+                <div class="modal-header">
+                    <div class="modal-title">Aggie Game Developers</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        I competed in the Spring 2024 TAGD game jam. For this competition, teams spend a semester going through the game development process to make a theme-related game. My team made a deck building rouge-like where the player collects spell cards to beat dungeons. I loved being able to work on a large project like this with a team, as it taught me project and time management skills. 
+                    </div>
+                </div>
+            </div>
+            <div class="modal-experience" id="experience-2">
+                <div class="modal-header">
+                    <div class="modal-title">EH Edge</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        Engineering Honors EDGE is a 4 year program focused on global engineering, leadership, and self development. I joined the first ever cohort, which has about 30 students. In my first year, we had industry speakers and read through “The 7 Habits of Highly Effective People” as a group. This has given me an opportunity to develop skills you can’t learn in a classroom. 
+                    </div>
+                </div>
+            </div>
+            <div class="modal-experience" id="experience-3">
+                <div class="modal-header">
+                    <div class="modal-title">Build 4 Good</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        Build 4 Good is a day-long hackathon with an emphasis on solving real world problems. My group decided to work on a project that would help local businesses create a website. This experience was a great way to get introduced to the development process for these kinds of projects. 
+                    </div>
+                </div>
+            </div>
+            <div class="modal-class" id="class-1">
+                <div class="modal-header">
+                    <div class="modal-title">Ethics of AI</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        This course focused on the development of AI and its relationship to the established and rapidly developing literature on the ethics of AI. Topics included AI traceability, value alignment, autonomy, accountability, effects,  and consciousness/thinking. This course allowed me to apply ethical theory to a topic that is important in the modern day. 
+                    </div>
+                </div>
+            </div>
+            <div class="modal-class" id="class-2">
+                <div class="modal-header">
+                    <div class="modal-title">Classical Philosophy</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        This course provided an overview of Greek philosophy from Thales to Aristotle. For most philosophers, we focused on their understanding of what the world is made of and why it is the way it is. We examined the development of monism in pre-Socratic philosophy, and the introduction of forms and Telos by Plato and Aristotle respectively. 
+                    </div>
+                </div>
+            </div>
+            <div class="modal-class" id="class-3">
+                <div class="modal-header">
+                    <div class="modal-title">17th Century Philosophy</div>
+                    <button data-close-button class="close-modal-button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-description">
+                        I am currently taking this course. So far, the course has focused on how classical Greek philosophers influenced philosophy up to the 17th century. This includes religious topics, especially in christianity and hinduism, and theory of mind and knowledge. 
+                    </div>
+                </div>
+            </div>
+            <div id="overlay"></div>
+        </div>
+
+        <div class="profiles-bar">
+            <div class="link-box" onclick="window.open('mailto:coffelt.jonah0918@gmail.com', '_blank');">
+                <img src="images\gmail-white.png" class="link-img">
+            </div>
+            <div class="link-box" onclick="window.open('https://github.com/JonahCoffelt', '_blank');">
+                <img src="images\github-white.png" class="link-img">
+            </div>
+            <div class="link-box" onclick="window.open('https://www.linkedin.com/in/jonah-coffelt-110131296/', '_blank');">
+                <img src="images\linkedin-white.png" class="link-img">
+            </div>
+        </div>
+        <script src="about-modal.js"></script>
+    </body>
+</html>
